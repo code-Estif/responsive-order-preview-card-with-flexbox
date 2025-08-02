@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  background-color: hsl(225, 100%, 94%);
+  background-image: url('images/pattern-background-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  max-width: 375px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+}
+
+.hero {
+  width: 100%;
+  display: block;
+}
+
+.content {
+  padding: 2rem;
+}
+
+.content h1 {
+  font-size: 1.5rem;
+  color: hsl(223, 47%, 23%);
+  margin-bottom: 1rem;
+  font-weight: 900;
+}
+
+.content p {
+  font-size: 1rem;
+  color: hsl(224, 23%, 55%);
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.plan {
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 12px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.plan-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.plan-name {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+.plan-price {
+  color: hsl(224, 23%, 55%);
+}
+
+.change-link {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: hsl(245, 75%, 52%);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.change-link:hover {
+  color: hsl(245, 83%, 68%);
+}
+
+.btn {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  margin-bottom: 1rem;
+  box-shadow: 0 15px 20px rgba(56, 41, 224, 0.2);
+}
+
+.btn.primary:hover {
+  background-color: hsl(245, 83%, 68%);
+}
+
+.btn.secondary {
+  background: none;
+  color: hsl(224, 23%, 55%);
+}
+
+.btn.secondary:hover {
+  color: hsl(223, 47%, 23%);
+}
+@media (max-width: 375px) {
+  body {
+    background-image: url('images/pattern-background-mobile.svg');
+    background-size: contain;
+  }
+
+  .card {
+    max-width: 90%;
+    margin: 1rem;
+  }
+
+  .content {
+    padding: 1.5rem;
+  }
+
+  .content h1 {
+    font-size: 1.3rem;
+  }
+
+  .content p {
+    font-size: 0.95rem;
+  }
+
+  .plan {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    text-align: left;
+  }
+
+  .plan-left {
+    width: 100%;
+  }
+
+  .change-link {
+    align-self: flex-end;
+    margin-top: -10px;
+  }
+
+  .btn {
+    font-size: 0.95rem;
+    padding: 0.9rem;
+  }
+}
