@@ -1,36 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Order Summary Component</title>
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Order summary card</title>
 </head>
 <body>
-  <main class="card">
-    <img src="images/illustration-hero.svg" alt="Hero Illustration" class="hero" />
-    <div class="content">
-      <h1>Order Summary</h1>
-      <p>
-        You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
-      </p>
-
+  <div class="container">
+    <div class="pic"><img src="./images/illustration-hero.svg"></div>
+    <div class="info">
+      <p class="header">Order Summary</p>
+      <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
+      device anywhere you like!</p>
       <div class="plan">
-        <div class="plan-left">
-          <img src="images/icon-music.svg" alt="Music Icon" />
-          <div>
-            <p class="plan-name">Annual Plan</p>
-            <p class="plan-price">$59.99/year</p>
-          </div>
-        </div>
-        <a href="#" class="change-link">Change</a>
+        <img src="./images/icon-music.svg" width="40px" style="margin-right: 15px;">
+        <p>Annual Plan <span style="color:var(--Neutral-gray-600); font-weight:700;">$59.99/year</span></p>
+        <p>Change</p>
       </div>
-
-      <button class="btn primary">Proceed to Payment</button>
-      <button class="btn secondary">Cancel Order</button>
+      <button>Proceed to Payment</button>
+      <p>Cancel Order</p>
     </div>
-  </main>
+  </div>
 </body>
 </html>
